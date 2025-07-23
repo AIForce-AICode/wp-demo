@@ -23,40 +23,40 @@
                 <?php endif; ?>
             </div>
             
-            <div style="display: flex; align-items: center;">
+            <div class="header-nav-wrapper">
                 <nav class="main-nav">
                     <ul>
                         <li>
                             <a href="<?php echo esc_url(home_url('/about')); ?>" 
-                               class="interactive-element <?php echo (is_page('about') || is_page('about-cmr')) ? 'active' : ''; ?>">
+                               class="nav-link interactive-element <?php echo (is_page('about') || is_page('about-cmr')) ? 'active' : ''; ?>">
                                 <?php echo t('about'); ?>
                             </a>
                         </li>
                         
                         <li>
                             <a href="<?php echo esc_url(home_url('/industry')); ?>" 
-                               class="interactive-element <?php echo (is_page('industry') || is_page('industry-fields')) ? 'active' : ''; ?>">
+                               class="nav-link interactive-element <?php echo (is_page('industry') || is_page('industry-fields')) ? 'active' : ''; ?>">
                                 <?php echo t('industry'); ?>
                             </a>
                         </li>
                         
                         <li>
                             <a href="<?php echo esc_url(home_url('/technology')); ?>" 
-                               class="interactive-element <?php echo (is_page('technology') || is_page('tech-capability')) ? 'active' : ''; ?>">
+                               class="nav-link interactive-element <?php echo (is_page('technology') || is_page('tech-capability')) ? 'active' : ''; ?>">
                                 <?php echo t('technology'); ?>
                             </a>
                         </li>
                         
                         <li>
                             <a href="<?php echo esc_url(home_url('/innovation')); ?>" 
-                               class="interactive-element <?php echo (is_page('innovation') || is_page('innovation-resources')) ? 'active' : ''; ?>">
+                               class="nav-link interactive-element <?php echo (is_page('innovation') || is_page('innovation-resources')) ? 'active' : ''; ?>">
                                 <?php echo t('innovation'); ?>
                             </a>
                         </li>
                         
                         <li>
                             <a href="<?php echo esc_url(home_url('/contact')); ?>" 
-                               class="interactive-element <?php echo (is_page('contact') || is_page('contact-us')) ? 'active' : ''; ?>">
+                               class="nav-link interactive-element <?php echo (is_page('contact') || is_page('contact-us')) ? 'active' : ''; ?>">
                                 <?php echo t('contact'); ?>
                             </a>
                         </li>

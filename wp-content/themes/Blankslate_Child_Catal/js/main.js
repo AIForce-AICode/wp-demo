@@ -1,4 +1,4 @@
-// WordPress主题JavaScript文件 - 增强版
+// WordPress主题JavaScript文件 - 修复版
 
 jQuery(document).ready(function($) {
     'use strict';
@@ -6,7 +6,6 @@ jQuery(document).ready(function($) {
     // 全局变量
     let isScrolling = false;
     let currentSlide = 0;
-    let currentNews = 0;
     let animationFrameId = null;
     
     // 初始化函数
@@ -29,38 +28,37 @@ jQuery(document).ready(function($) {
         initMobileOptimizations();
     }
     
-    // 平滑滚动
+    // 平滑滚动 - 修复定位问题
     function initSmoothScrolling() {
         $('a[href^="#"]').on('click', function(event) {
             const target = $(this.getAttribute('href'));
             if (target.length) {
                 event.preventDefault();
+                
+                // 动态计算header高度
+                const headerHeight = $('.site-header').outerHeight() || 90;
+                const offset = headerHeight + 20; // 添加20px缓冲区
+                
                 $('html, body').stop().animate({
-                    scrollTop: target.offset().top - 80
+                    scrollTop: target.offset().top - offset
                 }, 1000, 'easeInOutCubic');
             }
         });
     }
     
-    // 导航栏效果
+    // 导航栏效果 - 优化版
     function initHeaderEffects() {
         let lastScrollTop = 0;
+        const header = $('.site-header');
         
         $(window).on('scroll', throttle(function() {
             const scrollTop = $(this).scrollTop();
-            const header = $('.site-header');
             
+            // 滚动状态切换
             if (scrollTop > 50) {
                 header.addClass('scrolled');
             } else {
                 header.removeClass('scrolled');
-            }
-            
-            // 滚动方向检测
-            if (scrollTop > lastScrollTop && scrollTop > 200) {
-                header.addClass('header-hidden');
-            } else {
-                header.removeClass('header-hidden');
             }
             
             lastScrollTop = scrollTop;
@@ -97,19 +95,17 @@ jQuery(document).ready(function($) {
             if (slideshow.length && cultureImages.length > 0) {
                 const slide = cultureImages[currentSlide];
                 const img = slideshow.find('img');
-                const overlay = slideshow.find('.absolute.bottom-8');
+                const overlay = slideshow.find('[style*="position: absolute"][style*="bottom"]');
                 
                 // 淡出效果
                 img.fadeOut(500, function() {
                     $(this).attr('src', slide.src).attr('alt', slide.title);
-                    overlay.find('h3').text(slide.title);
-                    overlay.find('p').text(slide.description);
+                    if (overlay.length) {
+                        overlay.find('h3').text(slide.title);
+                        overlay.find('p').text(slide.description);
+                    }
                     $(this).fadeIn(500);
                 });
-                
-                // 更新指示器
-                slideshow.find('.absolute.bottom-8.right-8 button').removeClass('bg-accent-600 shadow-glow scale-125').addClass('bg-white/50');
-                slideshow.find('.absolute.bottom-8.right-8 button').eq(currentSlide).removeClass('bg-white/50').addClass('bg-accent-600 shadow-glow scale-125');
             }
         }
         
@@ -120,23 +116,6 @@ jQuery(document).ready(function($) {
                 updateCultureSlide();
             }
         }, 4000);
-        
-        // 手动控制
-        $(document).on('click', '#culture-slideshow .absolute.bottom-8.right-8 button', function() {
-            currentSlide = $(this).index();
-            updateCultureSlide();
-        });
-        
-        // 左右箭头控制
-        $(document).on('click', '#culture-slideshow .absolute.left-4', function() {
-            currentSlide = (currentSlide - 1 + cultureImages.length) % cultureImages.length;
-            updateCultureSlide();
-        });
-        
-        $(document).on('click', '#culture-slideshow .absolute.right-4', function() {
-            currentSlide = (currentSlide + 1) % cultureImages.length;
-            updateCultureSlide();
-        });
     }
     
     // 数字动画
@@ -217,7 +196,7 @@ jQuery(document).ready(function($) {
             // 显示加载状态
             const submitBtn = form.find('button[type="submit"]');
             const originalText = submitBtn.text();
-            submitBtn.prop('disabled', true).html('<i class="fas fa-spinner fa-spin mr-2"></i>发送中...');
+            submitBtn.prop('disabled', true).html('<i class="fas fa-spinner fa-spin" style="margin-right: 8px;"></i>发送中...');
             
             // 模拟AJAX提交
             setTimeout(function() {
@@ -246,21 +225,6 @@ jQuery(document).ready(function($) {
             });
             
             fileInput.click();
-        });
-        
-        // 邮件订阅
-        $('form:has(input[type="email"]):not(.contact-form)').on('submit', function(e) {
-            e.preventDefault();
-            
-            const email = $(this).find('input[type="email"]').val();
-            
-            if (!email || !isValidEmail(email)) {
-                showNotification('请输入有效的邮箱地址', 'error');
-                return;
-            }
-            
-            showNotification('订阅成功！感谢您的关注。', 'success');
-            this.reset();
         });
     }
     
@@ -299,19 +263,9 @@ jQuery(document).ready(function($) {
             
             setTimeout(() => ripple.remove(), 600);
         });
-        
-        // 文字交互效果
-        $('.interactive-text').hover(
-            function() {
-                $(this).addClass('text-hover-active');
-            },
-            function() {
-                $(this).removeClass('text-hover-active');
-            }
-        );
     }
     
-    // 语言切换
+    // 语言切换 - 修复版
     function initLanguageSwitcher() {
         $('#language-selector').on('change', function() {
             const selectedLang = $(this).val();
@@ -319,12 +273,34 @@ jQuery(document).ready(function($) {
             // 显示加载状态
             showNotification('正在切换语言...', 'info');
             
-            // 直接跳转到带语言参数的URL
-            const currentUrl = window.location.href;
-            const separator = currentUrl.includes('?') ? '&' : '?';
-            const newUrl = currentUrl + separator + 'lang=' + selectedLang;
-            
-            window.location.href = newUrl;
+            // 使用AJAX方式切换语言
+            $.ajax({
+                url: cmr_ajax.ajax_url,
+                type: 'POST',
+                data: {
+                    action: 'switch_language',
+                    language: selectedLang,
+                    nonce: cmr_ajax.nonce
+                },
+                success: function(response) {
+                    if (response.success) {
+                        showNotification('语言切换成功', 'success');
+                        // 延迟刷新页面以显示新语言
+                        setTimeout(function() {
+                            window.location.reload();
+                        }, 1000);
+                    } else {
+                        showNotification('语言切换失败', 'error');
+                    }
+                },
+                error: function() {
+                    // 如果AJAX失败，使用URL参数方式
+                    const currentUrl = window.location.href;
+                    const separator = currentUrl.includes('?') ? '&' : '?';
+                    const newUrl = currentUrl + separator + 'lang=' + selectedLang;
+                    window.location.href = newUrl;
+                }
+            });
         });
     }
     
@@ -373,17 +349,19 @@ jQuery(document).ready(function($) {
         });
     }
     
-    // Tab切换功能
+    // Tab切换功能 - 修复版
     function initTabSwitching() {
-        $('.tab-btn').on('click', function() {
+        // 通用tab切换
+        $('.tab-btn, .tech-tab-btn').on('click', function() {
             const targetTab = $(this).data('tab');
+            const tabGroup = $(this).hasClass('tech-tab-btn') ? 'tech-tab' : 'tab';
             
             // 移除所有活动状态
-            $('.tab-btn').removeClass('active').css({
+            $(`.${tabGroup}-btn`).removeClass('active').css({
                 'background': 'transparent',
-                'color': '#333'
+                'color': 'var(--primary-700)'
             });
-            $('.tab-pane').removeClass('active').hide();
+            $(`.${tabGroup}-pane`).removeClass('active').hide();
             
             // 添加当前活动状态
             $(this).addClass('active').css({
@@ -392,7 +370,7 @@ jQuery(document).ready(function($) {
             });
             
             // 显示对应内容
-            const targetPane = $('#' + targetTab);
+            const targetPane = $(`#${targetTab}`);
             targetPane.addClass('active').fadeIn(300);
             
             // 触发内容动画
@@ -401,6 +379,25 @@ jQuery(document).ready(function($) {
                     opacity: 1
                 }, 500);
             });
+        });
+        
+        // 能力选择器功能（技术页面专用）
+        $('.capability-card').on('click', function() {
+            const index = parseInt($(this).data('capability'));
+            
+            // 移除所有活动状态
+            $('.capability-card').removeClass('active').css({
+                'border': '2px solid transparent',
+                'background': 'white'
+            }).find('h3').css('color', 'var(--primary-800)');
+            $('.capability-card div[style*="transform: scale"]').css('transform', 'scale(1)');
+            
+            // 添加当前活动状态
+            $(this).addClass('active').css({
+                'border': '2px solid var(--accent-600)',
+                'background': 'var(--accent-50)'
+            }).find('h3').css('color', 'var(--accent-600)');
+            $(this).find('div[style*="background"]').css('transform', 'scale(1.1)');
         });
     }
     
@@ -554,7 +551,7 @@ jQuery(document).ready(function($) {
         const notification = $(`
             <div class="notification ${type}">
                 <div class="notification-content">
-                    <i class="fas fa-${getNotificationIcon(type)} mr-2"></i>
+                    <i class="fas fa-${getNotificationIcon(type)}" style="margin-right: 8px;"></i>
                     <span>${message}</span>
                 </div>
                 <button class="notification-close">
@@ -728,11 +725,6 @@ window.addEventListener('load', function() {
             transform: scale(1.2) rotate(5deg);
         }
         
-        .text-hover-active {
-            color: var(--accent-600);
-            transform: translateX(3px);
-        }
-        
         .mobile-nav {
             flex-direction: column;
             gap: 8px;
@@ -818,6 +810,28 @@ window.addEventListener('load', function() {
                 left: 10px;
                 max-width: none;
             }
+            
+            .header-nav-wrapper {
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+            }
+            
+            .main-nav ul {
+                flex-direction: column;
+                gap: 8px;
+                width: 100%;
+            }
+            
+            .nav-link {
+                text-align: center;
+                padding: 10px 15px;
+            }
+            
+            .language-switcher {
+                margin-left: 0;
+                justify-content: center;
+            }
         }
     `;
     document.head.appendChild(style);
@@ -826,7 +840,6 @@ window.addEventListener('load', function() {
 // 全局错误处理
 window.addEventListener('error', function(e) {
     console.error('JavaScript错误:', e.error);
-    // 可以在这里添加错误上报逻辑
 });
 
 // Service Worker注册（如果需要）
