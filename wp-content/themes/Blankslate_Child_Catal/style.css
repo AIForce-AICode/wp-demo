@@ -213,59 +213,6 @@ body {
   transform: translateY(0);
 }
 
-/* 下拉菜单 - 优化动画效果 */
-.main-nav .dropdown {
-  position: relative;
-}
-
-.main-nav .dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  box-shadow: var(--shadow-xl);
-  border-radius: var(--radius-lg);
-  min-width: 220px;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-10px) scale(0.95);
-  transition: all var(--duration-normal) cubic 0, 0.2, 1);
-  border: 1px solid var(--primary-200);
-}
-
-.main-nav .dropdown:hover .dropdown-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0) scale(1);
-}
-
-.main-nav .dropdown-menu li {
-  border-bottom: 1px solid var(--primary-100);
-  transition: all var(--duration-fast) ease;
-}
-
-.main-nav .dropdown-menu li:last-child {
-  border-bottom: none;
-}
-
-.main-nav .dropdown-menu li:hover {
-  background: var(--accent-50);
-}
-
-.main-nav .dropdown-menu a {
-  display: block;
-  padding: 14px 20px;
-  color: var(--primary-700);
-  border-radius: 0;
-  transition: all var(--duration-fast) ease;
-}
-
-.main-nav .dropdown-menu a:hover {
-  background: transparent;
-  color: var(--accent-600);
-  transform: translateX(5px);
-}
 
 /* 主要内容区域 */
 .main-content {

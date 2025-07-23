@@ -186,6 +186,25 @@ function get_translation($key, $lang = null) {
     return isset($translations[$lang][$key]) ? $translations[$lang][$key] : $key;
 }
 
+// 设置语言Cookie
+function set_current_language($lang) {
+    setcookie('cmr_language', $lang, time() + (86400 * 30), '/');
+    $_COOKIE['cmr_language'] = $lang; // 立即生效
+}
+
+// 处理语言切换请求
+function handle_language_switch_request() {
+    if (isset($_GET['lang']) && in_array($_GET['lang'], array('zh', 'en', 'es'))) {
+        set_current_language($_GET['lang']);
+        
+        // 重定向到当前页面，移除lang参数
+        $redirect_url = remove_query_arg('lang');
+        wp_redirect($redirect_url);
+        exit;
+    }
+}
+add_action('init', 'handle_language_switch_request');
+
 // 简化翻译函数
 function t($key, $lang = null) {
     return get_translation($key, $lang);

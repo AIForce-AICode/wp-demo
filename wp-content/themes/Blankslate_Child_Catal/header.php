@@ -26,42 +26,25 @@
             <div style="display: flex; align-items: center;">
                 <nav class="main-nav">
                     <ul>
-                        <li class="dropdown">
+                        <li>
                             <a href="<?php echo esc_url(home_url('/about')); ?>" 
                                class="interactive-element <?php echo (is_page('about') || is_page('about-cmr')) ? 'active' : ''; ?>">
                                 <?php echo t('about'); ?>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="<?php echo esc_url(home_url('/about#company')); ?>" class="interactive-text"><?php echo t('company_intro'); ?></a></li>
-                                <li><a href="<?php echo esc_url(home_url('/about#culture')); ?>" class="interactive-text"><?php echo t('culture_values'); ?></a></li>
-                                <li><a href="<?php echo esc_url(home_url('/about#qualifications')); ?>" class="interactive-text"><?php echo t('qualifications'); ?></a></li>
-                                <li><a href="<?php echo esc_url(home_url('/about#news')); ?>" class="interactive-text"><?php echo t('news'); ?></a></li>
-                                <li><a href="<?php echo esc_url(home_url('/about#careers')); ?>" class="interactive-text"><?php echo t('careers'); ?></a></li>
-                            </ul>
                         </li>
                         
-                        <li class="dropdown">
+                        <li>
                             <a href="<?php echo esc_url(home_url('/industry')); ?>" 
                                class="interactive-element <?php echo (is_page('industry') || is_page('industry-fields')) ? 'active' : ''; ?>">
                                 <?php echo t('industry'); ?>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="<?php echo esc_url(home_url('/industry#applications')); ?>" class="interactive-text"><?php echo t('product_applications'); ?></a></li>
-                                <li><a href="<?php echo esc_url(home_url('/industry#featured')); ?>" class="interactive-text"><?php echo t('advantage_products'); ?></a></li>
-                                <li><a href="<?php echo esc_url(home_url('/industry#other')); ?>" class="interactive-text"><?php echo t('other_products'); ?></a></li>
-                            </ul>
                         </li>
                         
-                        <li class="dropdown">
+                        <li>
                             <a href="<?php echo esc_url(home_url('/technology')); ?>" 
                                class="interactive-element <?php echo (is_page('technology') || is_page('tech-capability')) ? 'active' : ''; ?>">
                                 <?php echo t('technology'); ?>
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="<?php echo esc_url(home_url('/technology#capabilities')); ?>" class="interactive-text"><?php echo t('capability_display'); ?></a></li>
-                                <li><a href="<?php echo esc_url(home_url('/technology#design')); ?>" class="interactive-text"><?php echo t('design_engineering'); ?></a></li>
-                                <li><a href="<?php echo esc_url(home_url('/technology#solutions')); ?>" class="interactive-text"><?php echo t('solutions'); ?></a></li>
-                            </ul>
                         </li>
                         
                         <li>

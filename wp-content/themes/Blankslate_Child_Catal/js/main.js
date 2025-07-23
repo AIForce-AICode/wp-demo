@@ -319,28 +319,12 @@ jQuery(document).ready(function($) {
             // 显示加载状态
             showNotification('正在切换语言...', 'info');
             
-            // AJAX请求切换语言
-            $.ajax({
-                url: cmr_ajax.ajax_url,
-                type: 'POST',
-                data: {
-                    action: 'switch_language',
-                    language: selectedLang,
-                    nonce: cmr_ajax.nonce
-                },
-                success: function(response) {
-                    if (response.success) {
-                        showNotification('语言切换成功', 'success');
-                        // 刷新页面以应用新语言
-                        setTimeout(() => location.reload(), 1000);
-                    } else {
-                        showNotification('语言切换失败', 'error');
-                    }
-                },
-                error: function() {
-                    showNotification('网络错误，请重试', 'error');
-                }
-            });
+            // 直接跳转到带语言参数的URL
+            const currentUrl = window.location.href;
+            const separator = currentUrl.includes('?') ? '&' : '?';
+            const newUrl = currentUrl + separator + 'lang=' + selectedLang;
+            
+            window.location.href = newUrl;
         });
     }
     
