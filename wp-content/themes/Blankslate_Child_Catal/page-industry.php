@@ -664,4 +664,29 @@
     </div>
 </section>
 
+<script>
+jQuery(document).ready(function($) {
+    // Tab切换功能
+    $('.tab-btn').on('click', function() {
+        const targetTab = $(this).data('tab');
+        
+        // 移除所有活动状态
+        $('.tab-btn').removeClass('active').css({
+            'background': 'transparent',
+            'color': 'var(--primary-700)'
+        });
+        $('.tab-pane').removeClass('active').hide();
+        
+        // 添加当前活动状态
+        $(this).addClass('active').css({
+            'background': 'var(--accent-600)',
+            'color': 'white'
+        });
+        
+        // 显示对应内容
+        $('#' + targetTab).addClass('active').fadeIn(300);
+    });
+});
+</script>
+
 <?php get_footer(); ?>
