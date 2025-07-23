@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.w{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.title{
+    text-align: center;
+    margin: 60px auto 40px;
+}
+.title h2{
+    font-size: 24px;
+    color: #333;
+}
+.title .line{
+    width: 56px;
+    height: 4px;
+    background: #333;
+    margin: 10px auto 0;
+}
+
+@media screen and (max-width: 1330px){
+    .w{
+        width: 636px;
+        margin: 0 auto;
+    }
+    .nav{
+        display: none;
+    }
+}
+@media screen and (max-width: 768px){
+    .w{
+        width: 348px;
+        margin: 0 auto;
+    }
+}
