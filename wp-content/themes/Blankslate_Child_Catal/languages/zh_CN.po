@@ -1,0 +1,101 @@
+# Chinese (Simplified) Language File for CMR Theme
+msgid ""
+msgstr ""
+"Project-Id-Version: CMR Corporate Theme\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "home"
+msgstr "首页"
+
+msgid "about"
+msgstr "关于CMR"
+
+msgid "industry"
+msgstr "行业领域"
+
+msgid "technology"
+msgstr "技术能力"
+
+msgid "innovation"
+msgstr "创新资源"
+
+msgid "contact"
+msgstr "联系我们"
+
+msgid "company_intro"
+msgstr "公司介绍"
+
+msgid "culture_values"
+msgstr "文化与价值观"
+
+msgid "qualifications"
+msgstr "资质与专利"
+
+msgid "news"
+msgstr "新闻动态"
+
+msgid "careers"
+msgstr "加入我们"
+
+msgid "product_applications"
+msgstr "产品应用"
+
+msgid "advantage_products"
+msgstr "优势产品"
+
+msgid "other_products"
+msgstr "其他产品"
+
+msgid "capability_display"
+msgstr "能力陈列"
+
+msgid "design_engineering"
+msgstr "设计与工程"
+
+msgid "solutions"
+msgstr "解决方案"
+
+msgid "blog_subscribe"
+msgstr "博客和订阅"
+
+msgid "address_online"
+msgstr "地址+在线"
+
+msgid "read_more"
+msgstr "了解更多"
+
+msgid "contact_us"
+msgstr "联系我们"
+
+msgid "learn_more"
+msgstr "了解更多"
+
+msgid "view_more"
+msgstr "查看更多"
+
+msgid "send_message"
+msgstr "发送消息"
+
+msgid "follow_us"
+msgstr "关注我们"
+
+msgid "back_to_top"
+msgstr "返回顶部"
+
+msgid "loading"
+msgstr "加载中..."
+
+msgid "success"
+msgstr "成功"
+
+msgid "error"
+msgstr "错误"
+
+msgid "warning"
+msgstr "警告"
+
+msgid "info"
+msgstr "信息"

@@ -17,69 +17,88 @@
                 <?php if (has_custom_logo()) : ?>
                     <?php the_custom_logo(); ?>
                 <?php else : ?>
-                    <a href="<?php echo esc_url(home_url('/')); ?>" class="logo">
+                    <a href="<?php echo esc_url(home_url('/')); ?>" class="logo interactive-element">
                         <?php bloginfo('name'); ?>
                     </a>
                 <?php endif; ?>
             </div>
             
-            <nav class="main-nav">
-                <ul>
-                    <li class="dropdown">
-                        <a href="<?php echo esc_url(home_url('/about')); ?>" 
-                           class="<?php echo (is_page('about') || is_page('about-cmr')) ? 'active' : ''; ?>">
-                            关于CMR
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="<?php echo esc_url(home_url('/about#company')); ?>">公司介绍</a></li>
-                            <li><a href="<?php echo esc_url(home_url('/about#culture')); ?>">文化与价值观</a></li>
-                            <li><a href="<?php echo esc_url(home_url('/about#qualifications')); ?>">资质与专利</a></li>
-                            <li><a href="<?php echo esc_url(home_url('/about#news')); ?>">新闻动态</a></li>
-                            <li><a href="<?php echo esc_url(home_url('/about#careers')); ?>">加入我们</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li class="dropdown">
-                        <a href="<?php echo esc_url(home_url('/industry')); ?>" 
-                           class="<?php echo (is_page('industry') || is_page('industry-fields')) ? 'active' : ''; ?>">
-                            行业领域
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="<?php echo esc_url(home_url('/industry#applications')); ?>">产品应用</a></li>
-                            <li><a href="<?php echo esc_url(home_url('/industry#featured')); ?>">优势产品</a></li>
-                            <li><a href="<?php echo esc_url(home_url('/industry#other')); ?>">其他产品</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li class="dropdown">
-                        <a href="<?php echo esc_url(home_url('/technology')); ?>" 
-                           class="<?php echo (is_page('technology') || is_page('tech-capability')) ? 'active' : ''; ?>">
-                            技术能力
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a href="<?php echo esc_url(home_url('/technology#capabilities')); ?>">能力陈列</a></li>
-                            <li><a href="<?php echo esc_url(home_url('/technology#design')); ?>">设计与工程</a></li>
-                            <li><a href="<?php echo esc_url(home_url('/technology#solutions')); ?>">解决方案</a></li>
-                        </ul>
-                    </li>
-                    
-                    <li>
-                        <a href="<?php echo esc_url(home_url('/innovation')); ?>" 
-                           class="<?php echo (is_page('innovation') || is_page('innovation-resources')) ? 'active' : ''; ?>">
-                            创新资源
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="<?php echo esc_url(home_url('/contact')); ?>" 
-                           class="<?php echo (is_page('contact') || is_page('contact-us')) ? 'active' : ''; ?>">
-                            联系我们
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <div style="display: flex; align-items: center;">
+                <nav class="main-nav">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="<?php echo esc_url(home_url('/about')); ?>" 
+                               class="interactive-element <?php echo (is_page('about') || is_page('about-cmr')) ? 'active' : ''; ?>">
+                                <?php echo t('about'); ?>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="<?php echo esc_url(home_url('/about#company')); ?>" class="interactive-text"><?php echo t('company_intro'); ?></a></li>
+                                <li><a href="<?php echo esc_url(home_url('/about#culture')); ?>" class="interactive-text"><?php echo t('culture_values'); ?></a></li>
+                                <li><a href="<?php echo esc_url(home_url('/about#qualifications')); ?>" class="interactive-text"><?php echo t('qualifications'); ?></a></li>
+                                <li><a href="<?php echo esc_url(home_url('/about#news')); ?>" class="interactive-text"><?php echo t('news'); ?></a></li>
+                                <li><a href="<?php echo esc_url(home_url('/about#careers')); ?>" class="interactive-text"><?php echo t('careers'); ?></a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="<?php echo esc_url(home_url('/industry')); ?>" 
+                               class="interactive-element <?php echo (is_page('industry') || is_page('industry-fields')) ? 'active' : ''; ?>">
+                                <?php echo t('industry'); ?>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="<?php echo esc_url(home_url('/industry#applications')); ?>" class="interactive-text"><?php echo t('product_applications'); ?></a></li>
+                                <li><a href="<?php echo esc_url(home_url('/industry#featured')); ?>" class="interactive-text"><?php echo t('advantage_products'); ?></a></li>
+                                <li><a href="<?php echo esc_url(home_url('/industry#other')); ?>" class="interactive-text"><?php echo t('other_products'); ?></a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="<?php echo esc_url(home_url('/technology')); ?>" 
+                               class="interactive-element <?php echo (is_page('technology') || is_page('tech-capability')) ? 'active' : ''; ?>">
+                                <?php echo t('technology'); ?>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="<?php echo esc_url(home_url('/technology#capabilities')); ?>" class="interactive-text"><?php echo t('capability_display'); ?></a></li>
+                                <li><a href="<?php echo esc_url(home_url('/technology#design')); ?>" class="interactive-text"><?php echo t('design_engineering'); ?></a></li>
+                                <li><a href="<?php echo esc_url(home_url('/technology#solutions')); ?>" class="interactive-text"><?php echo t('solutions'); ?></a></li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="<?php echo esc_url(home_url('/innovation')); ?>" 
+                               class="interactive-element <?php echo (is_page('innovation') || is_page('innovation-resources')) ? 'active' : ''; ?>">
+                                <?php echo t('innovation'); ?>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="<?php echo esc_url(home_url('/contact')); ?>" 
+                               class="interactive-element <?php echo (is_page('contact') || is_page('contact-us')) ? 'active' : ''; ?>">
+                                <?php echo t('contact'); ?>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <!-- 语言切换器 -->
+                <div class="language-switcher">
+                    <select id="language-selector" class="interactive-element">
+                        <option value="zh" <?php echo (get_current_language() == 'zh') ? 'selected' : ''; ?>>中文</option>
+                        <option value="en" <?php echo (get_current_language() == 'en') ? 'selected' : ''; ?>>English</option>
+                        <option value="es" <?php echo (get_current_language() == 'es') ? 'selected' : ''; ?>>Español</option>
+                    </select>
+                </div>
+            </div>
         </div>
     </div>
 </header>
+
+<!-- 返回顶部按钮 -->
+<button class="back-to-top interactive-element" id="back-to-top" title="<?php echo t('back_to_top'); ?>">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- 加载动画 -->
+<div id="page-loader" class="loading-spinner" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999; display: none;"></div>
 
 <main class="main-content">

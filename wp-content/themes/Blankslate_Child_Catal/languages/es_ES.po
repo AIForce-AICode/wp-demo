@@ -1,0 +1,101 @@
+# Spanish Language File for CMR Theme
+msgid ""
+msgstr ""
+"Project-Id-Version: CMR Corporate Theme\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "home"
+msgstr "Inicio"
+
+msgid "about"
+msgstr "Acerca de CMR"
+
+msgid "industry"
+msgstr "Industrias"
+
+msgid "technology"
+msgstr "Tecnología"
+
+msgid "innovation"
+msgstr "Innovación"
+
+msgid "contact"
+msgstr "Contáctanos"
+
+msgid "company_intro"
+msgstr "Introducción de la Empresa"
+
+msgid "culture_values"
+msgstr "Cultura y Valores"
+
+msgid "qualifications"
+msgstr "Calificaciones y Patentes"
+
+msgid "news"
+msgstr "Noticias"
+
+msgid "careers"
+msgstr "Carreras"
+
+msgid "product_applications"
+msgstr "Aplicaciones de Productos"
+
+msgid "advantage_products"
+msgstr "Productos Ventajosos"
+
+msgid "other_products"
+msgstr "Otros Productos"
+
+msgid "capability_display"
+msgstr "Capacidades"
+
+msgid "design_engineering"
+msgstr "Diseño e Ingeniería"
+
+msgid "solutions"
+msgstr "Soluciones"
+
+msgid "blog_subscribe"
+msgstr "Blog y Suscripción"
+
+msgid "address_online"
+msgstr "Dirección y En Línea"
+
+msgid "read_more"
+msgstr "Leer Más"
+
+msgid "contact_us"
+msgstr "Contáctanos"
+
+msgid "learn_more"
+msgstr "Aprender Más"
+
+msgid "view_more"
+msgstr "Ver Más"
+
+msgid "send_message"
+msgstr "Enviar Mensaje"
+
+msgid "follow_us"
+msgstr "Síguenos"
+
+msgid "back_to_top"
+msgstr "Volver Arriba"
+
+msgid "loading"
+msgstr "Cargando..."
+
+msgid "success"
+msgstr "Éxito"
+
+msgid "error"
+msgstr "Error"
+
+msgid "warning"
+msgstr "Advertencia"
+
+msgid "info"
+msgstr "Información"
