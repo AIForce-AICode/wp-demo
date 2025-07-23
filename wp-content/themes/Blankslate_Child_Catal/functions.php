@@ -29,13 +29,16 @@ add_action('after_setup_theme', 'cmr_theme_setup');
 // 注册样式和脚本
 function cmr_theme_scripts() {
     // 主样式文件
-    wp_enqueue_style('cmr-style', get_stylesheet_uri(), array(), '2.0.0');
+    wp_enqueue_style('cmr-style', get_stylesheet_uri(), array(), '2.1.0');
+    
+    // 科技感动画样式
+    wp_enqueue_style('cmr-tech-animations', get_template_directory_uri() . '/css/tech-animations.css', array('cmr-style'), '2.1.0');
     
     // Font Awesome图标
     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css', array(), '6.0.0');
     
     // 主脚本文件
-    wp_enqueue_script('cmr-script', get_template_directory_uri() . '/js/main.js', array('jquery'), '2.0.0', true);
+    wp_enqueue_script('cmr-script', get_template_directory_uri() . '/js/main.js', array('jquery'), '2.1.0', true);
     
     // 本地化脚本
     wp_localize_script('cmr-script', 'cmr_ajax', array(
