@@ -1,22 +1,49 @@
 <?php get_header(); ?>
 
-<div class="page-header">
+<div class="page-header tech-grid">
+    <!-- 科技感粒子背景 -->
+    <div class="tech-particles">
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+    </div>
+    
+    <!-- 脉冲波效果 -->
+    <div class="tech-pulse-wave"></div>
+    
+    
     <div class="container">
-        <h1 class="page-title"><?php echo t('innovation'); ?></h1>
+        <h1 class="page-title tech-text"><?php echo t('innovation'); ?></h1>
         <p class="page-subtitle">持续创新驱动，引领磁性材料技术发展</p>
     </div>
 </div>
 
 <!-- 研发能力 -->
-<section class="content-section">
+<section class="content-section tech-grid">
+    <!-- 科技感粒子背景 -->
+    <div class="tech-particles">
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+    </div>
+    
     <div class="container">
-        <h2 class="section-title">研发能力</h2>
+        <h2 class="section-title tech-text">研发能力</h2>
         <p class="section-subtitle">
             拥有完整的研发体系，从基础材料研究到产品工程化应用的全链条创新能力
         </p>
         
         <div class="card-grid">
-            <div class="card interactive-element">
+            <div class="card tech-card tech-hover tech-scan interactive-element">
                 <div style="width: 64px; height: 64px; background: var(--primary-100); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
                     <i class="fas fa-atom" style="font-size: 24px; color: var(--accent-600);"></i>
                 </div>
@@ -42,7 +69,7 @@
                 </div>
             </div>
 
-            <div class="card interactive-element">
+            <div class="card tech-card tech-hover tech-scan interactive-element">
                 <div style="width: 64px; height: 64px; background: var(--primary-100); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
                     <i class="fas fa-drafting-compass" style="font-size: 24px; color: var(--accent-600);"></i>
                 </div>
@@ -68,7 +95,7 @@
                 </div>
             </div>
 
-            <div class="card interactive-element">
+            <div class="card tech-card tech-hover tech-scan interactive-element">
                 <div style="width: 64px; height: 64px; background: var(--primary-100); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
                     <i class="fas fa-microscope" style="font-size: 24px; color: var(--accent-600);"></i>
                 </div>
@@ -94,7 +121,7 @@
                 </div>
             </div>
 
-            <div class="card interactive-element">
+            <div class="card tech-card tech-hover tech-scan interactive-element">
                 <div style="width: 64px; height: 64px; background: var(--primary-100); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
                     <i class="fas fa-cogs" style="font-size: 24px; color: var(--accent-600);"></i>
                 </div>
@@ -124,15 +151,24 @@
 </section>
 
 <!-- 技术专利 -->
-<section class="content-section" style="background: var(--primary-50);">
+<section class="content-section tech-grid" style="background: var(--primary-50);">
+    <!-- 科技感粒子背景 -->
+    <div class="tech-particles">
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+    </div>
+    
     <div class="container">
-        <h2 class="section-title">技术专利</h2>
+        <h2 class="section-title tech-text">技术专利</h2>
         <p class="section-subtitle">
             持续的技术创新积累，形成了完善的知识产权保护体系
         </p>
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px;">
-            <div class="card interactive-element" style="padding: 30px;">
+            <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 30px;">
                 <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px;">
                     <h3 style="font-size: 20px; font-weight: bold; color: var(--primary-800); flex: 1;">纳米晶材料制备技术</h3>
                     <span style="padding: 6px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin-left: 15px; background: var(--accent-100); color: var(--accent-700);">
@@ -143,7 +179,7 @@
                 <p style="color: var(--primary-700); line-height: 1.6;">一种高性能纳米晶合金带材的制备方法</p>
             </div>
 
-            <div class="card interactive-element" style="padding: 30px;">
+            <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 30px;">
                 <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px;">
                     <h3 style="font-size: 20px; font-weight: bold; color: var(--primary-800); flex: 1;">EMC滤波器设计</h3>
                     <span style="padding: 6px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin-left: 15px; background: var(--accent-100); color: var(--accent-700);">
@@ -154,7 +190,7 @@
                 <p style="color: var(--primary-700); line-height: 1.6;">基于纳米晶材料的高频EMC滤波器结构设计</p>
             </div>
 
-            <div class="card interactive-element" style="padding: 30px;">
+            <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 30px;">
                 <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px;">
                     <h3 style="font-size: 20px; font-weight: bold; color: var(--primary-800); flex: 1;">磁性元件封装技术</h3>
                     <span style="padding: 6px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin-left: 15px; background: var(--primary-200); color: var(--primary-800);">
@@ -165,7 +201,7 @@
                 <p style="color: var(--primary-700); line-height: 1.6;">一种适用于高温环境的磁性元件封装结构</p>
             </div>
 
-            <div class="card interactive-element" style="padding: 30px;">
+            <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 30px;">
                 <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 20px;">
                     <h3 style="font-size: 20px; font-weight: bold; color: var(--primary-800); flex: 1;">充磁工艺优化</h3>
                     <span style="padding: 6px 12px; border-radius: 20px; font-size: 14px; font-weight: 600; margin-left: 15px; background: var(--accent-100); color: var(--accent-700);">
@@ -180,9 +216,18 @@
 </section>
 
 <!-- 研发成果 -->
-<section class="content-section">
+<section class="content-section tech-grid">
+    <!-- 科技感粒子背景 -->
+    <div class="tech-particles">
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+    </div>
+    
     <div class="container">
-        <h2 class="section-title">研发成果</h2>
+        <h2 class="section-title tech-text">研发成果</h2>
         <p class="section-subtitle">
             技术创新转化为实际产品，为客户创造价值
         </p>
@@ -195,19 +240,19 @@
                     <p style="font-size: 18px; color: var(--primary-700); line-height: 1.6; margin-bottom: 30px;">厚度16-18μm，磁导率>8×10⁴</p>
                     
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                        <div class="card interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
                             <div style="font-size: 24px; font-weight: bold; color: var(--accent-600); margin-bottom: 8px;">>8×10⁴</div>
                             <div style="font-size: 14px; color: var(--primary-700); font-weight: 500;">磁导率</div>
                         </div>
-                        <div class="card interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
                             <div style="font-size: 24px; font-weight: bold; color: var(--accent-600); margin-bottom: 8px;">-55℃~150℃</div>
                             <div style="font-size: 14px; color: var(--primary-700); font-weight: 500;">工作温度</div>
                         </div>
-                        <div class="card interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
                             <div style="font-size: 24px; font-weight: bold; color: var(--accent-600); margin-bottom: 8px;">16-18μm</div>
                             <div style="font-size: 14px; color: var(--primary-700); font-weight: 500;">带材厚度</div>
                         </div>
-                        <div class="card interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
                             <div style="font-size: 24px; font-weight: bold; color: var(--accent-600); margin-bottom: 8px;">超低损耗</div>
                             <div style="font-size: 14px; color: var(--primary-700); font-weight: 500;">损耗</div>
                         </div>
@@ -228,19 +273,19 @@
                     <p style="font-size: 18px; color: var(--primary-700); line-height: 1.6; margin-bottom: 30px;">全方位电磁兼容性解决方案</p>
                     
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                        <div class="card interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
                             <div style="font-size: 24px; font-weight: bold; color: var(--accent-600); margin-bottom: 8px;">汽车/新能源</div>
                             <div style="font-size: 14px; color: var(--primary-700); font-weight: 500;">应用领域</div>
                         </div>
-                        <div class="card interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
                             <div style="font-size: 24px; font-weight: bold; color: var(--accent-600); margin-bottom: 8px;">中高频</div>
                             <div style="font-size: 14px; color: var(--primary-700); font-weight: 500;">频率范围</div>
                         </div>
-                        <div class="card interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
                             <div style="font-size: 24px; font-weight: bold; color: var(--accent-600); margin-bottom: 8px;">>95%</div>
                             <div style="font-size: 14px; color: var(--primary-700); font-weight: 500;">效率提升</div>
                         </div>
-                        <div class="card interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
                             <div style="font-size: 24px; font-weight: bold; color: var(--accent-600); margin-bottom: 8px;">30-50%</div>
                             <div style="font-size: 14px; color: var(--primary-700); font-weight: 500;">体积减小</div>
                         </div>
@@ -261,19 +306,19 @@
                     <p style="font-size: 18px; color: var(--primary-700); line-height: 1.6; margin-bottom: 30px;">自动化生产线与质量控制系统</p>
                     
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                        <div class="card interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
                             <div style="font-size: 24px; font-weight: bold; color: var(--accent-600); margin-bottom: 8px;">>90%</div>
                             <div style="font-size: 14px; color: var(--primary-700); font-weight: 500;">自动化程度</div>
                         </div>
-                        <div class="card interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
                             <div style="font-size: 24px; font-weight: bold; color: var(--accent-600); margin-bottom: 8px;">>99%</div>
                             <div style="font-size: 14px; color: var(--primary-700); font-weight: 500;">良品率</div>
                         </div>
-                        <div class="card interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
                             <div style="font-size: 24px; font-weight: bold; color: var(--accent-600); margin-bottom: 8px;">提升200%</div>
                             <div style="font-size: 14px; color: var(--primary-700); font-weight: 500;">生产效率</div>
                         </div>
-                        <div class="card interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 20px; text-align: center; background: var(--primary-50);">
                             <div style="font-size: 24px; font-weight: bold; color: var(--accent-600); margin-bottom: 8px;">Cpk>1.67</div>
                             <div style="font-size: 14px; color: var(--primary-700); font-weight: 500;">质量稳定性</div>
                         </div>
@@ -291,15 +336,24 @@
 </section>
 
 <!-- 合作伙伴 -->
-<section class="content-section" style="background: var(--primary-50);">
+<section class="content-section tech-grid" style="background: var(--primary-50);">
+    <!-- 科技感粒子背景 -->
+    <div class="tech-particles">
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+    </div>
+    
     <div class="container">
-        <h2 class="section-title">合作伙伴</h2>
+        <h2 class="section-title tech-text">合作伙伴</h2>
         <p class="section-subtitle">
             与知名院校、科研院所和行业领军企业建立深度合作关系
         </p>
         
         <div class="card-grid">
-            <div class="card interactive-element" style="text-align: center; padding: 25px;">
+            <div class="card tech-card tech-hover tech-scan interactive-element" style="text-align: center; padding: 25px;">
                 <div style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto 25px;">
                     <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
                          alt="清华大学" 
@@ -310,7 +364,7 @@
                 <p style="color: var(--primary-700); font-size: 14px; line-height: 1.6;">材料科学基础研究合作</p>
             </div>
 
-            <div class="card interactive-element" style="text-align: center; padding: 25px;">
+            <div class="card tech-card tech-hover tech-scan interactive-element" style="text-align: center; padding: 25px;">
                 <div style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto 25px;">
                     <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
                          alt="中科院" 
@@ -321,7 +375,7 @@
                 <p style="color: var(--primary-700); font-size: 14px; line-height: 1.6;">纳米材料技术联合开发</p>
             </div>
 
-            <div class="card interactive-element" style="text-align: center; padding: 25px;">
+            <div class="card tech-card tech-hover tech-scan interactive-element" style="text-align: center; padding: 25px;">
                 <div style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto 25px;">
                     <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
                          alt="比亚迪" 
@@ -332,7 +386,7 @@
                 <p style="color: var(--primary-700); font-size: 14px; line-height: 1.6;">新能源汽车EMC解决方案</p>
             </div>
 
-            <div class="card interactive-element" style="text-align: center; padding: 25px;">
+            <div class="card tech-card tech-hover tech-scan interactive-element" style="text-align: center; padding: 25px;">
                 <div style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto 25px;">
                     <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
                          alt="华为" 
@@ -347,15 +401,24 @@
 </section>
 
 <!-- 关注我们 -->
-<section class="content-section">
+<section class="content-section tech-grid">
+    <!-- 科技感粒子背景 -->
+    <div class="tech-particles">
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+    </div>
+    
     <div class="container">
-        <h2 class="section-title">关注我们</h2>
+        <h2 class="section-title tech-text">关注我们</h2>
         <p class="section-subtitle">
             扫描二维码关注我们的公众号，获取最新技术资讯和行业动态
         </p>
         
         <div style="display: flex; justify-content: center;">
-            <div class="card interactive-element" style="padding: 30px; text-align: center; background: var(--primary-50); max-width: 400px;">
+            <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 30px; text-align: center; background: var(--primary-50); max-width: 400px;">
                 <div style="width: 250px; height: 250px; margin: 0 auto 25px; background: white; border-radius: 15px; padding: 15px; box-shadow: var(--shadow-lg);">
                     <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
                          alt="CMR公众号二维码"
@@ -395,7 +458,16 @@
 </section>
 
 <!-- 联系我们 -->
-<section class="content-section" style="background: var(--accent-600); color: white;">
+<section class="content-section tech-grid" style="background: var(--accent-600); color: white;">
+    <!-- 科技感粒子背景 -->
+    <div class="tech-particles">
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+    </div>
+    
     <div class="container">
         <div style="text-align: center;">
             <h2 style="font-size: 48px; font-weight: bold; margin-bottom: 25px;">开启创新合作之旅</h2>
@@ -403,11 +475,11 @@
                 与我们一起探索磁性材料的无限可能，共创美好未来
             </p>
             <div style="display: flex; flex-direction: column; gap: 20px; justify-content: center; align-items: center;">
-                <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn" style="background: white; color: var(--accent-600); padding: 15px 30px; font-size: 18px; display: inline-flex; align-items: center; gap: 12px;">
+                <a href="<?php echo esc_url(home_url('/contact')); ?>" class="btn tech-button" style="background: white; color: var(--accent-600); padding: 15px 30px; font-size: 18px; display: inline-flex; align-items: center; gap: 12px;">
                     <i class="fas fa-envelope"></i>
                     <span>联系我们</span>
                 </a>
-                <a href="<?php echo esc_url(home_url('/technology')); ?>" class="btn btn-outline" style="border: 2px solid white; color: white; padding: 15px 30px; font-size: 18px; display: inline-flex; align-items: center; gap: 12px;">
+                <a href="<?php echo esc_url(home_url('/technology')); ?>" class="btn btn-outline tech-button" style="border: 2px solid white; color: white; padding: 15px 30px; font-size: 18px; display: inline-flex; align-items: center; gap: 12px;">
                     <span>了解技术能力</span>
                     <i class="fas fa-arrow-right"></i>
                 </a>

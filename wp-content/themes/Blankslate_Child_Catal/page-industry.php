@@ -1,14 +1,41 @@
 <?php get_header(); ?>
 
-<div class="page-header">
+<div class="page-header tech-grid">
+    <!-- 科技感粒子背景 -->
+    <div class="tech-particles">
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+    </div>
+    
+    <!-- 脉冲波效果 -->
+    <div class="tech-pulse-wave"></div>
+    
+    
     <div class="container">
-        <h1 class="page-title"><?php echo t('industry'); ?></h1>
+        <h1 class="page-title tech-text"><?php echo t('industry'); ?></h1>
         <p class="page-subtitle">为全球多个行业提供专业的磁性材料解决方案</p>
     </div>
 </div>
 
 <!-- Tab导航 -->
-<section class="content-section">
+<section class="content-section tech-grid">
+    <!-- 科技感粒子背景 -->
+    <div class="tech-particles">
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+    </div>
+    
     <div class="container">
         <!-- Tab切换按钮 -->
         <div style="display: flex; justify-content: center; margin-bottom: 50px;">
@@ -46,7 +73,7 @@
                 <!-- 产品应用列表 -->
                 <div style="display: flex; flex-direction: column; gap: 60px;">
                     <!-- 新能源汽车 -->
-                    <div class="card interactive-element" style="padding: 30px;">
+                    <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 30px;">
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start;">
                             <div>
                                 <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
@@ -111,7 +138,7 @@
                     </div>
 
                     <!-- 新能源发电与储能 -->
-                    <div class="card interactive-element" style="padding: 30px;">
+                    <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 30px;">
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start;">
                             <div>
                                 <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
@@ -168,7 +195,7 @@
                     </div>
 
                     <!-- 电力电子与开关电源 -->
-                    <div class="card interactive-element" style="padding: 30px;">
+                    <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 30px;">
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start;">
                             <div>
                                 <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
@@ -233,7 +260,7 @@
                     </div>
 
                     <!-- 高端消费电子与无线充电 -->
-                    <div class="card interactive-element" style="padding: 30px;">
+                    <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 30px;">
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; align-items: start;">
                             <div>
                                 <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 25px;">
@@ -291,7 +318,7 @@
                 </div>
 
                 <!-- 纳米晶磁芯总结 -->
-                <div class="card interactive-element" style="padding: 30px; background: var(--accent-50); margin-top: 60px;">
+                <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 30px; background: var(--accent-50); margin-top: 60px;">
                     <h3 style="font-size: 28px; font-weight: bold; color: var(--primary-800); text-align: center; margin-bottom: 25px;">纳米晶磁芯：赋能核心领域，解决复杂EMC挑战</h3>
                     <p style="font-size: 18px; color: var(--accent-600); line-height: 1.8; text-align: center; max-width: 1200px; margin: 0 auto;">
                         斯莫尔公司凭借先进的EMC技术，专注于研发高性能纳米晶磁芯材料。该材料以其高饱和磁感、超高磁导率、极低损耗及优异的温度与频率稳定性，成为汽车、新能源、电力电子等领域应对电磁兼容性（EMC）挑战、提升系统性能与可靠性的理想选择。
@@ -427,7 +454,7 @@
                     <h3 style="font-size: 28px; font-weight: bold; color: var(--accent-600); text-align: center; margin-bottom: 50px;">行业应用</h3>
                     <div style="display: flex; flex-direction: column; gap: 50px;">
                         <!-- 汽车 -->
-                        <div class="card interactive-element" style="padding: 30px;">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 30px;">
                             <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
                                 <div style="width: 80px; height: 80px; background: var(--primary-100); border-radius: 15px; display: flex; align-items: center; justify-content: center;">
                                     <i class="fas fa-car" style="font-size: 36px; color: var(--accent-600);"></i>
@@ -466,7 +493,7 @@
                         </div>
 
                         <!-- 新能源 -->
-                        <div class="card interactive-element" style="padding: 30px;">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 30px;">
                             <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
                                 <div style="width: 80px; height: 80px; background: var(--primary-100); border-radius: 15px; display: flex; align-items: center; justify-content: center;">
                                     <i class="fas fa-leaf" style="font-size: 36px; color: var(--accent-600);"></i>
@@ -493,7 +520,7 @@
                         </div>
 
                         <!-- 消费电子 -->
-                        <div class="card interactive-element" style="padding: 30px;">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 30px;">
                             <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
                                 <div style="width: 80px; height: 80px; background: var(--primary-100); border-radius: 15px; display: flex; align-items: center; justify-content: center;">
                                     <i class="fas fa-mobile-alt" style="font-size: 36px; color: var(--accent-600);"></i>
@@ -524,7 +551,7 @@
                         </div>
 
                         <!-- 家用电器和其他应用工具 -->
-                        <div class="card interactive-element" style="padding: 30px;">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 30px;">
                             <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 30px;">
                                 <div style="width: 80px; height: 80px; background: var(--primary-100); border-radius: 15px; display: flex; align-items: center; justify-content: center;">
                                     <i class="fas fa-home" style="font-size: 36px; color: var(--accent-600);"></i>
@@ -560,7 +587,7 @@
             <!-- 其他产品内容 -->
             <div id="others" class="tab-pane" style="display: none;">
                 <div class="card-grid">
-                    <div class="card interactive-element" style="padding: 30px; text-align: center;">
+                    <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 30px; text-align: center;">
                         <div style="width: 80px; height: 80px; background: var(--primary-100); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
                             <i class="fas fa-magnet" style="font-size: 36px; color: var(--accent-600);"></i>
                         </div>
@@ -593,7 +620,7 @@
                         </div>
                     </div>
 
-                    <div class="card interactive-element" style="padding: 30px; text-align: center;">
+                    <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 30px; text-align: center;">
                         <div style="width: 80px; height: 80px; background: var(--primary-100); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
                             <i class="fas fa-cogs" style="font-size: 36px; color: var(--accent-600);"></i>
                         </div>
@@ -626,7 +653,7 @@
                         </div>
                     </div>
 
-                    <div class="card interactive-element" style="padding: 30px; text-align: center;">
+                    <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 30px; text-align: center;">
                         <div style="width: 80px; height: 80px; background: var(--primary-100); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin: 0 auto 25px;">
                             <i class="fas fa-microscope" style="font-size: 36px; color: var(--accent-600);"></i>
                         </div>
