@@ -26,7 +26,7 @@
             <nav class="main-nav">
                 <ul>
                     <li>
-                        <a href="<?php echo esc_url(home_url('/about')); ?>" 
+                        <a href="<?php echo esc_url(home_url('/?page_id=14')); ?>" 
                            class="nav-link <?php echo (is_page('about') || is_page('about-cmr')) ? 'active' : ''; ?>">
                             关于CMR
                         </a>
