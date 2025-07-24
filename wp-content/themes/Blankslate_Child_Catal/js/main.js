@@ -26,6 +26,123 @@ jQuery(document).ready(function($) {
         initModalSystem();
         initLoadingEffects();
         initMobileOptimizations();
+        initParticleEffects();
+        initTechEffects();
+    }
+    
+    // 粒子效果初始化
+    function initParticleEffects() {
+        // 创建动态粒子
+        function createParticle(container) {
+            const particle = document.createElement('div');
+            particle.className = 'dynamic-particle';
+            particle.style.cssText = `
+                position: absolute;
+                width: 2px;
+                height: 2px;
+                background: var(--accent-600);
+                border-radius: 50%;
+                pointer-events: none;
+                opacity: 0;
+                left: ${Math.random() * 100}%;
+                animation: particle-float ${15 + Math.random() * 10}s linear infinite;
+                animation-delay: ${Math.random() * 5}s;
+            `;
+            container.appendChild(particle);
+            
+            // 移除粒子
+            setTimeout(() => {
+                if (particle.parentNode) {
+                    particle.parentNode.removeChild(particle);
+                }
+            }, 25000);
+        }
+        
+        // 为每个粒子容器创建粒子
+        $('.tech-particles').each(function() {
+            const container = this;
+            setInterval(() => {
+                if (container.children.length < 20) {
+                    createParticle(container);
+                }
+            }, 2000);
+        });
+    }
+    
+    // 科技效果初始化
+    function initTechEffects() {
+        // 鼠标跟随效果
+        let mouseX = 0, mouseY = 0;
+        
+        $(document).on('mousemove', function(e) {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            
+            // 更新脉冲波位置
+            $('.tech-pulse-wave').css({
+                left: mouseX - 100,
+                top: mouseY - 100
+            });
+        });
+        
+        // 滚动视差效果
+        $(window).on('scroll', throttle(function() {
+            const scrollTop = $(this).scrollTop();
+            const scrollPercent = scrollTop / ($(document).height() - $(window).height());
+            
+            // 背景视差
+            $('.hero-section').css({
+                'background-position': `center ${scrollTop * 0.5}px`
+            });
+            
+            // 粒子视差
+            $('.tech-particles').css({
+                'transform': `translateY(${scrollTop * 0.1}px)`
+            });
+        }, 16));
+        
+        // 元素进入视窗时的动画
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+        
+        // 观察所有卡片元素
+        $('.tech-card, .card').each(function() {
+            observer.observe(this);
+        });
+        
+        // 科技感打字效果
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+        
+        // 为标题添加打字效果
+        const heroTitle = $('.hero-title')[0];
+        if (heroTitle) {
+            const originalText = heroTitle.textContent;
+            setTimeout(() => {
+                typeWriter(heroTitle, originalText, 80);
+            }, 1000);
+        }
     }
     
     // 平滑滚动 - 修复定位问题
