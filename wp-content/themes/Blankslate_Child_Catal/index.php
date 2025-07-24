@@ -24,24 +24,6 @@
     <!-- 脉冲波效果 -->
     <div class="tech-pulse-wave"></div>
     
-    <!-- 数字雨效果 -->
-    <div class="digital-rain">
-        <div class="rain-drop" style="left: 5%; animation-delay: 0s;">01</div>
-        <div class="rain-drop" style="left: 15%; animation-delay: 1s;">10</div>
-        <div class="rain-drop" style="left: 25%; animation-delay: 2s;">11</div>
-        <div class="rain-drop" style="left: 35%; animation-delay: 3s;">00</div>
-        <div class="rain-drop" style="left: 45%; animation-delay: 4s;">01</div>
-        <div class="rain-drop" style="left: 55%; animation-delay: 5s;">10</div>
-        <div class="rain-drop" style="left: 65%; animation-delay: 6s;">11</div>
-        <div class="rain-drop" style="left: 75%; animation-delay: 7s;">00</div>
-        <div class="rain-drop" style="left: 85%; animation-delay: 8s;">01</div>
-        <div class="rain-drop" style="left: 95%; animation-delay: 9s;">10</div>
-        <div class="rain-drop" style="left: 12%; animation-delay: 10s;">11</div>
-        <div class="rain-drop" style="left: 32%; animation-delay: 11s;">00</div>
-        <div class="rain-drop" style="left: 52%; animation-delay: 12s;">01</div>
-        <div class="rain-drop" style="left: 72%; animation-delay: 13s;">10</div>
-        <div class="rain-drop" style="left: 92%; animation-delay: 14s;">11</div>
-    </div>
     
     <div class="hero-content">
         <h1 class="hero-title tech-text">纳米晶磁芯垂直整合创新者</h1>

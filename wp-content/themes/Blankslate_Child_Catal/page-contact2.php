@@ -18,18 +18,6 @@
     <!-- 脉冲波效果 -->
     <div class="tech-pulse-wave"></div>
     
-    <!-- 数字雨效果 -->
-    <div class="digital-rain">
-        <div class="rain-drop" style="left: 10%; animation-delay: 0s;">01</div>
-        <div class="rain-drop" style="left: 20%; animation-delay: 1s;">10</div>
-        <div class="rain-drop" style="left: 30%; animation-delay: 2s;">11</div>
-        <div class="rain-drop" style="left: 40%; animation-delay: 3s;">00</div>
-        <div class="rain-drop" style="left: 50%; animation-delay: 4s;">01</div>
-        <div class="rain-drop" style="left: 60%; animation-delay: 5s;">10</div>
-        <div class="rain-drop" style="left: 70%; animation-delay: 6s;">11</div>
-        <div class="rain-drop" style="left: 80%; animation-delay: 7s;">00</div>
-        <div class="rain-drop" style="left: 90%; animation-delay: 8s;">01</div>
-    </div>
     
     <div class="container">
         <h1 class="page-title tech-text">联系CMR</h1>
