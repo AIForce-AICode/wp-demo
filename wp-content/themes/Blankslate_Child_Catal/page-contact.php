@@ -1,16 +1,43 @@
 <?php get_header(); ?>
 
-<div class="page-header">
+<div class="page-header tech-grid">
+    <!-- 科技感粒子背景 -->
+    <div class="tech-particles">
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+    </div>
+    
+    <!-- 脉冲波效果 -->
+    <div class="tech-pulse-wave"></div>
+    
+    
     <div class="container">
-        <h1 class="page-title">联系CMR</h1>
+        <h1 class="page-title tech-text">联系CMR</h1>
         <p class="page-subtitle">杭州斯莫尔磁性材料有限公司 - 全球化磁性材料解决方案提供商</p>
     </div>
 </div>
 
 <!-- 全球布局展示 -->
-<section class="content-section">
+<section class="content-section tech-grid">
+    <!-- 科技感粒子背景 -->
+    <div class="tech-particles">
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+    </div>
+    
     <div class="container">
-        <h2 class="section-title">全球布局</h2>
+        <h2 class="section-title tech-text">全球布局</h2>
         <p class="section-subtitle">
             CMR在中国和墨西哥设有生产基地，为全球客户提供优质的磁性材料产品和服务
         </p>
@@ -24,7 +51,7 @@
             
             <!-- 全球分布图位置 -->
             <div style="background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); padding: 20px; margin-bottom: 30px;">
-                <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/联系我们/Images/全球布局.png" 
                      alt="全球布局" 
                      style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px;">
             </div>
@@ -33,7 +60,7 @@
         <!-- 主要办事处信息 -->
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 60px;">
             <!-- 杭州总部 -->
-            <div class="card" style="padding: 30px;">
+            <div class="card tech-card tech-hover tech-scan" style="padding: 30px;">
                 <div style="display: flex; align-items: center; margin-bottom: 25px;">
                     <div style="width: 60px; height: 60px; background: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
                         <i class="fas fa-building" style="font-size: 24px; color: #2c5aa0;"></i>
@@ -67,14 +94,14 @@
 
                 <!-- 杭州总部图片位置 -->
                 <div style="background: #f0f0f0; border-radius: 10px; height: 200px;">
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/联系我们/Images/杭州工厂.png" 
                          alt="杭州总部" 
                          style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
                 </div>
             </div>
 
             <!-- 墨西哥工厂 -->
-            <div class="card" style="padding: 30px;">
+            <div class="card tech-card tech-hover tech-scan" style="padding: 30px;">
                 <div style="display: flex; align-items: center; margin-bottom: 25px;">
                     <div style="width: 60px; height: 60px; background: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px;">
                         <i class="fas fa-industry" style="font-size: 24px; color: #2c5aa0;"></i>
@@ -105,7 +132,7 @@
 
                 <!-- 墨西哥工厂图片位置 -->
                 <div style="background: #f0f0f0; border-radius: 10px; height: 200px;">
-                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/联系我们/Images/墨西哥工厂.png" 
                          alt="墨西哥工厂" 
                          style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
                 </div>
@@ -114,7 +141,7 @@
 
         <!-- 其他联系信息 -->
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 60px;">
-            <div class="card" style="padding: 25px; text-align: center;">
+            <div class="card tech-card tech-hover tech-scan" style="padding: 25px; text-align: center;">
                 <div style="width: 60px; height: 60px; background: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
                     <i class="fas fa-envelope" style="font-size: 24px; color: #2c5aa0;"></i>
                 </div>
@@ -126,7 +153,7 @@
                 </div>
             </div>
 
-            <div class="card" style="padding: 25px; text-align: center;">
+            <div class="card tech-card tech-hover tech-scan" style="padding: 25px; text-align: center;">
                 <div style="width: 60px; height: 60px; background: #e3f2fd; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
                     <i class="fas fa-clock" style="font-size: 24px; color: #2c5aa0;"></i>
                 </div>
@@ -145,22 +172,22 @@
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
                 <!-- 预留的四张图片位置 -->
                 <div style="background: #f0f0f0; border-radius: 10px; height: 250px;">
-                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/关于我们/文化与价值观/Images/车间1.png" 
                          alt="公司展示图片 1" 
                          style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
                 </div>
                 <div style="background: #f0f0f0; border-radius: 10px; height: 250px;">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/关于我们/文化与价值观/Images/工作照.png" 
                          alt="公司展示图片 2" 
                          style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
                 </div>
                 <div style="background: #f0f0f0; border-radius: 10px; height: 250px;">
-                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/关于我们/文化与价值观/Images/前台.png" 
                          alt="公司展示图片 3" 
                          style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
                 </div>
                 <div style="background: #f0f0f0; border-radius: 10px; height: 250px;">
-                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/关于我们/文化与价值观/Images/员工.png" 
                          alt="公司展示图片 4" 
                          style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
                 </div>
@@ -170,7 +197,16 @@
 </section>
 
 <!-- 联系表单板块 -->
-<section class="content-section" style="background: #f8f9fa;">
+<section class="content-section tech-grid" style="background: var(--primary-50);">
+    <!-- 科技感粒子背景 -->
+    <div class="tech-particles">
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+    </div>
+    
     <div class="container">
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 50px;">
             <div>
@@ -211,7 +247,7 @@
                 </div>
             </div>
 
-            <div style="background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); padding: 30px;">
+            <div class="tech-card tech-border" style="background: white; border-radius: 10px; box-shadow: var(--shadow-tech); padding: 30px;">
                 <form class="contact-form">
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
                         <div>
@@ -262,7 +298,8 @@
                                   placeholder="请详细描述您的需求或问题"></textarea>
                     </div>
 
-                    <button type="submit" class="btn" style="width: 100%; padding: 15px; font-size: 16px;">
+                    <button type="submit" class="btn tech-button" style="width: 100%; padding: 15px; font-size: 16px;">
+                        <i class="fas fa-paper-plane" style="margin-right: 8px;"></i>
                         发送消息
                     </button>
                 </form>
@@ -272,28 +309,37 @@
 </section>
 
 <!-- 社交媒体板块 -->
-<section class="content-section">
+<section class="content-section tech-grid">
+    <!-- 科技感粒子背景 -->
+    <div class="tech-particles">
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+    </div>
+    
     <div class="container">
-        <h2 class="section-title">关注我们</h2>
+        <h2 class="section-title tech-text">关注我们</h2>
         <p class="section-subtitle">
             通过社交媒体与我们保持联系，获取最新资讯和动态
         </p>
         
         <div class="card-grid">
-            <div class="card" style="text-align: center; padding: 25px;">
+            <div class="card tech-card tech-hover tech-scan" style="text-align: center; padding: 25px;">
                 <div style="font-size: 48px; color: #4caf50; margin-bottom: 15px;">
                     <i class="fab fa-weixin"></i>
                 </div>
                 <h3 style="font-size: 18px; font-weight: 600; color: #2c5aa0; margin-bottom: 20px;">微信公众号</h3>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/创新资源/Images/公众号二维码.jpg" 
                          alt="微信公众号二维码"
                          style="width: 100px; height: 100px; margin: 0 auto 15px; border-radius: 10px;">
                     <p style="color: #666; font-size: 14px;">扫码关注</p>
                 </div>
             </div>
             
-            <div class="card" style="text-align: center; padding: 25px;">
+            <div class="card tech-card tech-hover tech-scan" style="text-align: center; padding: 25px;">
                 <div style="font-size: 48px; color: #e60012; margin-bottom: 15px;">
                     <i class="fab fa-weibo"></i>
                 </div>
@@ -301,7 +347,7 @@
                 <a href="#" class="btn btn-outline">关注我们</a>
             </div>
             
-            <div class="card" style="text-align: center; padding: 25px;">
+            <div class="card tech-card tech-hover tech-scan" style="text-align: center; padding: 25px;">
                 <div style="font-size: 48px; color: #0077b5; margin-bottom: 15px;">
                     <i class="fab fa-linkedin"></i>
                 </div>
@@ -309,7 +355,7 @@
                 <a href="#" class="btn btn-outline">关注我们</a>
             </div>
             
-            <div class="card" style="text-align: center; padding: 25px;">
+            <div class="card tech-card tech-hover tech-scan" style="text-align: center; padding: 25px;">
                 <div style="font-size: 48px; color: #1da1f2; margin-bottom: 15px;">
                     <i class="fab fa-twitter"></i>
                 </div>
