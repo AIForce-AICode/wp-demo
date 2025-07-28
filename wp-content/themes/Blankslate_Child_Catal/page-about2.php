@@ -137,7 +137,7 @@
                 </p>
             </div>
             <div>
-                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/关于我们/公司介绍/Images/制造中心-杭州.png" 
                      alt="斯莫尔制造基地" 
                      style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px;">
             </div>
@@ -374,7 +374,7 @@
         
         <!-- 文化照片轮播 -->
         <div id="culture-slideshow" style="position: relative; height: 500px; border-radius: 10px; overflow: hidden; margin-bottom: 40px;">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/关于我们/文化与价值观/Images/会议室.png" 
                  alt="现代化办公环境" 
                  style="width: 100%; height: 100%; object-fit: cover;">
             <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); padding: 40px; color: white;">
@@ -498,7 +498,7 @@
         
         <div class="card-grid">
             <div class="card tech-card tech-hover tech-scan">
-                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/关于我们/新闻动态/Images/1.png" 
                      alt="PCIM展会" 
                      style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
                 <h3 class="card-title">闪耀PCIM | CMR迈入全球合作新篇章</h3>
@@ -508,7 +508,7 @@
             </div>
             
             <div class="card tech-card tech-hover tech-scan">
-                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/关于我们/新闻动态/Images/2.png" 
                      alt="技术突破" 
                      style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
                 <h3 class="card-title">CMR新一代纳米晶磁芯技术突破</h3>
@@ -518,7 +518,7 @@
             </div>
             
             <div class="card tech-card tech-hover tech-scan">
-                <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/关于我们/新闻动态/Images/3.png" 
                      alt="工厂扩建" 
                      style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; margin-bottom: 15px;">
                 <h3 class="card-title">CMR墨西哥工厂产能扩建项目启动</h3>

@@ -51,7 +51,7 @@
             
             <!-- 全球分布图位置 -->
             <div style="background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); padding: 20px; margin-bottom: 30px;">
-                <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/联系我们/Images/全球布局.png" 
                      alt="全球布局" 
                      style="width: 100%; height: 400px; object-fit: cover; border-radius: 10px;">
             </div>
@@ -94,7 +94,7 @@
 
                 <!-- 杭州总部图片位置 -->
                 <div style="background: #f0f0f0; border-radius: 10px; height: 200px;">
-                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/联系我们/Images/杭州工厂.png" 
                          alt="杭州总部" 
                          style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
                 </div>
@@ -132,7 +132,7 @@
 
                 <!-- 墨西哥工厂图片位置 -->
                 <div style="background: #f0f0f0; border-radius: 10px; height: 200px;">
-                    <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/联系我们/Images/墨西哥工厂.png" 
                          alt="墨西哥工厂" 
                          style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
                 </div>
@@ -172,22 +172,22 @@
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
                 <!-- 预留的四张图片位置 -->
                 <div style="background: #f0f0f0; border-radius: 10px; height: 250px;">
-                    <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/关于我们/文化与价值观/Images/车间1.png" 
                          alt="公司展示图片 1" 
                          style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
                 </div>
                 <div style="background: #f0f0f0; border-radius: 10px; height: 250px;">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/关于我们/文化与价值观/Images/工作照.png" 
                          alt="公司展示图片 2" 
                          style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
                 </div>
                 <div style="background: #f0f0f0; border-radius: 10px; height: 250px;">
-                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/关于我们/文化与价值观/Images/前台.png" 
                          alt="公司展示图片 3" 
                          style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
                 </div>
                 <div style="background: #f0f0f0; border-radius: 10px; height: 250px;">
-                    <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/关于我们/文化与价值观/Images/员工.png" 
                          alt="公司展示图片 4" 
                          style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
                 </div>
@@ -332,7 +332,7 @@
                 </div>
                 <h3 style="font-size: 18px; font-weight: 600; color: #2c5aa0; margin-bottom: 20px;">微信公众号</h3>
                 <div>
-                    <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/创新资源/Images/公众号二维码.jpg" 
                          alt="微信公众号二维码"
                          style="width: 100px; height: 100px; margin: 0 auto 15px; border-radius: 10px;">
                     <p style="color: #666; font-size: 14px;">扫码关注</p>
