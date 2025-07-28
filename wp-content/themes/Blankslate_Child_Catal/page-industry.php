@@ -130,7 +130,7 @@
                             </div>
                             
                             <div class="image-hover-effect">
-                                <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/行业领域/产品应用/汽车首图.jpg" 
                                      alt="新能源汽车" 
                                      style="width: 100%; height: 320px; object-fit: cover; border-radius: 10px;">
                             </div>
@@ -187,7 +187,7 @@
                             </div>
                             
                             <div class="image-hover-effect">
-                                <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/行业领域/产品应用/新能源首图.jpg" 
                                      alt="新能源发电与储能" 
                                      style="width: 100%; height: 320px; object-fit: cover; border-radius: 10px;">
                             </div>
@@ -252,7 +252,7 @@
                             </div>
                             
                             <div class="image-hover-effect">
-                                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/技术能力/能力和解决方案/实验室/质量管理.png" 
                                      alt="电力电子与开关电源" 
                                      style="width: 100%; height: 320px; object-fit: cover; border-radius: 10px;">
                             </div>
@@ -309,7 +309,7 @@
                             </div>
                             
                             <div class="image-hover-effect">
-                                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/行业领域/产品应用/消费电子首图.jpg" 
                                      alt="高端消费电子与无线充电" 
                                      style="width: 100%; height: 320px; object-fit: cover; border-radius: 10px;">
                             </div>
@@ -366,7 +366,7 @@
                         </div>
                         
                         <div class="image-hover-effect">
-                            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/行业领域/优势产品/1.纳米材料介绍.png" 
                                  alt="纳米材料" 
                                  style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px;">
                         </div>
@@ -404,7 +404,7 @@
                         </div>
                         
                         <div style="order: 1;" class="image-hover-effect">
-                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/行业领域/优势产品/2.磁打印技术介绍.png" 
                                  alt="磁打印技术" 
                                  style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px;">
                         </div>
@@ -442,7 +442,7 @@
                         </div>
                         
                         <div class="image-hover-effect">
-                            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/行业领域/优势产品/3.钕铁硼.png" 
                                  alt="钕铁硼" 
                                  style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px;">
                         </div>
@@ -486,7 +486,7 @@
                             </div>
                             
                             <div class="image-hover-effect">
-                                <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/行业领域/产品应用/汽车首图.jpg" 
                                      alt="汽车" 
                                      style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px;">
                             </div>
@@ -513,7 +513,7 @@
                             </div>
                             
                             <div class="image-hover-effect">
-                                <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/行业领域/产品应用/新能源首图.jpg" 
                                      alt="新能源" 
                                      style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px;">
                             </div>
@@ -544,7 +544,7 @@
                             </div>
                             
                             <div class="image-hover-effect">
-                                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/行业领域/产品应用/消费电子首图.jpg" 
                                      alt="消费电子" 
                                      style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px;">
                             </div>
@@ -575,7 +575,7 @@
                             </div>
                             
                             <div class="image-hover-effect">
-                                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/行业领域/产品应用/家用电器和其他应用工具首图.jpg" 
                                      alt="家用电器和其他应用工具" 
                                      style="width: 100%; height: 250px; object-fit: cover; border-radius: 10px;">
                             </div>
@@ -595,7 +595,7 @@
                         <p style="color: var(--primary-600); margin-bottom: 25px; line-height: 1.6;">高性能软磁材料，适用于各种电磁应用</p>
                         
                         <div style="margin-bottom: 25px;" class="image-hover-effect">
-                            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/技术能力/产品介绍/带材/1.png" 
                                  alt="软磁材料" 
                                  style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
                         </div>
@@ -628,7 +628,7 @@
                         <p style="color: var(--primary-600); margin-bottom: 25px; line-height: 1.6;">定制化磁性组件解决方案</p>
                         
                         <div style="margin-bottom: 25px;" class="image-hover-effect">
-                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/技术能力/产品介绍/磁环/图片 1.png" 
                                  alt="磁性组件" 
                                  style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
                         </div>
@@ -661,7 +661,7 @@
                         <p style="color: var(--primary-600); margin-bottom: 25px; line-height: 1.6;">专业的磁性材料测试设备</p>
                         
                         <div style="margin-bottom: 25px;" class="image-hover-effect">
-                            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/技术能力/产品介绍/磁环/图片 5.png" 
                                  alt="测试设备" 
                                  style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px;">
                         </div>

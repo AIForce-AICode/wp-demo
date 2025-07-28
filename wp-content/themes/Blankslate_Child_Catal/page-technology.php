@@ -151,7 +151,7 @@
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
                     <div class="card tech-card tech-hover tech-scan interactive-element" style="overflow: hidden;">
                         <div style="position: relative;" class="image-hover-effect">
-                            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/技术能力/产品介绍/带材/1.png" 
                                  alt="磁带" 
                                  style="width: 100%; height: 250px; object-fit: cover;">
                             <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);"></div>
@@ -186,7 +186,7 @@
 
                     <div class="card tech-card tech-hover tech-scan interactive-element" style="overflow: hidden;">
                         <div style="position: relative;" class="image-hover-effect">
-                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/行业领域/优势产品/2.磁打印技术介绍.png" 
                                  alt="磁打印技术" 
                                  style="width: 100%; height: 250px; object-fit: cover;">
                             <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);"></div>
@@ -221,7 +221,7 @@
 
                     <div class="card tech-card tech-hover tech-scan interactive-element" style="overflow: hidden;">
                         <div style="position: relative;" class="image-hover-effect">
-                            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/技术能力/产品介绍/带材/2.png" 
                                  alt="带材" 
                                  style="width: 100%; height: 250px; object-fit: cover;">
                             <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);"></div>
@@ -256,7 +256,7 @@
 
                     <div class="card tech-card tech-hover tech-scan interactive-element" style="overflow: hidden;">
                         <div style="position: relative;" class="image-hover-effect">
-                            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/image/技术能力/产品介绍/磁环/图片 1.png" 
                                  alt="器件" 
                                  style="width: 100%; height: 250px; object-fit: cover;">
                             <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);"></div>
@@ -305,7 +305,7 @@
                     <div style="display: flex; gap: 30px; animation: autoSlide 30s linear infinite;">
                         <div class="card tech-card tech-hover tech-scan interactive-element" style="flex-shrink: 0; width: 320px; overflow: hidden;">
                             <div class="image-hover-effect">
-                                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/技术能力/能力和解决方案/一体化产业链/纳米晶带材/5.png" 
                                      alt="电磁仿真设计" 
                                      style="width: 100%; height: 200px; object-fit: cover;">
                             </div>
@@ -335,7 +335,7 @@
 
                         <div class="card tech-card tech-hover tech-scan interactive-element" style="flex-shrink: 0; width: 320px; overflow: hidden;">
                             <div class="image-hover-effect">
-                                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/技术能力/能力和解决方案/一体化产业链/模具设计制造/1.png" 
                                      alt="结构工程设计" 
                                      style="width: 100%; height: 200px; object-fit: cover;">
                             </div>
@@ -365,7 +365,7 @@
 
                         <div class="card tech-card tech-hover tech-scan interactive-element" style="flex-shrink: 0; width: 320px; overflow: hidden;">
                             <div class="image-hover-effect">
-                                <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/技术能力/能力和解决方案/一体化产业链/注塑/图片 1.jpg" 
                                      alt="工艺流程设计" 
                                      style="width: 100%; height: 200px; object-fit: cover;">
                             </div>
@@ -395,7 +395,7 @@
 
                         <div class="card tech-card tech-hover tech-scan interactive-element" style="flex-shrink: 0; width: 320px; overflow: hidden;">
                             <div class="image-hover-effect">
-                                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/image/技术能力/能力和解决方案/实验室/质量管理.png" 
                                      alt="测试验证设计" 
                                      style="width: 100%; height: 200px; object-fit: cover;">
                             </div>

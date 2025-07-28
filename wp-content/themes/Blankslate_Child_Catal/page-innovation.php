@@ -260,7 +260,7 @@
                 </div>
                 
                 <div class="image-hover-effect">
-                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/技术能力/产品介绍/带材/3.png" 
                          alt="高性能纳米晶带材" 
                          style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px;">
                 </div>
@@ -293,7 +293,7 @@
                 </div>
                 
                 <div style="order: 1;" class="image-hover-effect">
-                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/技术能力/能力和解决方案/一体化产业链/纳米晶磁芯/1.png" 
                          alt="EMC解决方案" 
                          style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px;">
                 </div>
@@ -326,7 +326,7 @@
                 </div>
                 
                 <div class="image-hover-effect">
-                    <img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/技术能力/能力和解决方案/一体化产业链/自动化/1.png" 
                          alt="智能制造系统" 
                          style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px;">
                 </div>
@@ -355,7 +355,7 @@
         <div class="card-grid">
             <div class="card tech-card tech-hover tech-scan interactive-element" style="text-align: center; padding: 25px;">
                 <div style="width: 80px; height: 80px; border-radius: 50%; overflow: hidden; margin: 0 auto 25px;">
-                    <img src="https://images.unsplash.com/photo-1562774053-701939374585?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" 
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/image/关于我们/文化与价值观/Images/词云气泡方形图表海报.png" 
                          alt="清华大学" 
                          style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
