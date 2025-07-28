@@ -1,14 +1,41 @@
 <?php get_header(); ?>
 
-<div class="page-header">
+<div class="page-header tech-grid">
+    <!-- 科技感粒子背景 -->
+    <div class="tech-particles">
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+    </div>
+    
+    <!-- 脉冲波效果 -->
+    <div class="tech-pulse-wave"></div>
+    
+    
     <div class="container">
-        <h1 class="page-title">技术能力</h1>
+        <h1 class="page-title tech-text">技术能力</h1>
         <p class="page-subtitle">纳米晶磁芯垂直整合创新者，全链能力赋能客户突破性能极限</p>
     </div>
 </div>
 
 <!-- Tab导航 -->
-<section class="content-section">
+<section class="content-section tech-grid">
+    <!-- 科技感粒子背景 -->
+    <div class="tech-particles">
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+        <div class="hero-particle"></div>
+    </div>
+    
     <div class="container">
         <!-- Tab切换按钮 -->
         <div style="display: flex; justify-content: center; margin-bottom: 50px;">
@@ -47,28 +74,28 @@
 
                 <!-- 能力选择器 -->
                 <div class="card-grid" style="margin-bottom: 50px;">
-                    <div class="card capability-card active interactive-element" data-capability="0" style="text-align: center; cursor: pointer; border: 2px solid var(--accent-600); background: var(--accent-50);">
+                    <div class="card tech-card tech-hover tech-scan capability-card active interactive-element" data-capability="0" style="text-align: center; cursor: pointer; border: 2px solid var(--accent-600); background: var(--accent-50);">
                         <div style="width: 64px; height: 64px; background: #3b82f6; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; transform: scale(1.1);">
                             <i class="fas fa-dna" style="font-size: 24px; color: white;"></i>
                         </div>
                         <h3 style="font-size: 18px; font-weight: bold; margin-bottom: 12px; color: var(--accent-600);">材料基因库</h3>
                         <p style="color: var(--primary-600); font-size: 14px;">10+材料配方，纳米晶材料技术突破</p>
                     </div>
-                    <div class="card capability-card interactive-element" data-capability="1" style="text-align: center; cursor: pointer;">
+                    <div class="card tech-card tech-hover tech-scan capability-card interactive-element" data-capability="1" style="text-align: center; cursor: pointer;">
                         <div style="width: 64px; height: 64px; background: #10b981; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
                             <i class="fas fa-brain" style="font-size: 24px; color: white;"></i>
                         </div>
                         <h3 style="font-size: 18px; font-weight: bold; margin-bottom: 12px; color: var(--primary-800);">仿真设计</h3>
                         <p style="color: var(--primary-600); font-size: 14px;">多物理场联合仿真，精确预测产品性能</p>
                     </div>
-                    <div class="card capability-card interactive-element" data-capability="2" style="text-align: center; cursor: pointer;">
+                    <div class="card tech-card tech-hover tech-scan capability-card interactive-element" data-capability="2" style="text-align: center; cursor: pointer;">
                         <div style="width: 64px; height: 64px; background: #8b5cf6; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
                             <i class="fas fa-industry" style="font-size: 24px; color: white;"></i>
                         </div>
                         <h3 style="font-size: 18px; font-weight: bold; margin-bottom: 12px; color: var(--primary-800);">智能制造</h3>
                         <p style="color: var(--primary-600); font-size: 14px;">垂直整合制造，从材料到成品全链条</p>
                     </div>
-                    <div class="card capability-card interactive-element" data-capability="3" style="text-align: center; cursor: pointer;">
+                    <div class="card tech-card tech-hover tech-scan capability-card interactive-element" data-capability="3" style="text-align: center; cursor: pointer;">
                         <div style="width: 64px; height: 64px; background: #ef4444; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px;">
                             <i class="fas fa-certificate" style="font-size: 24px; color: white;"></i>
                         </div>
@@ -78,7 +105,7 @@
                 </div>
 
                 <!-- 选中能力的详细信息 -->
-                <div class="card" style="padding: 40px; background: var(--primary-50);">
+                <div class="card tech-card tech-border" style="padding: 40px; background: var(--primary-50);">
                     <div id="capability-details">
                         <div style="display: flex; align-items: center; margin-bottom: 30px;">
                             <div style="width: 80px; height: 80px; background: #3b82f6; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 25px;">
@@ -122,7 +149,7 @@
                 </div>
 
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
-                    <div class="card interactive-element" style="overflow: hidden;">
+                    <div class="card tech-card tech-hover tech-scan interactive-element" style="overflow: hidden;">
                         <div style="position: relative;" class="image-hover-effect">
                             <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                                  alt="磁带" 
@@ -157,7 +184,7 @@
                         </div>
                     </div>
 
-                    <div class="card interactive-element" style="overflow: hidden;">
+                    <div class="card tech-card tech-hover tech-scan interactive-element" style="overflow: hidden;">
                         <div style="position: relative;" class="image-hover-effect">
                             <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                                  alt="磁打印技术" 
@@ -192,7 +219,7 @@
                         </div>
                     </div>
 
-                    <div class="card interactive-element" style="overflow: hidden;">
+                    <div class="card tech-card tech-hover tech-scan interactive-element" style="overflow: hidden;">
                         <div style="position: relative;" class="image-hover-effect">
                             <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                                  alt="带材" 
@@ -227,7 +254,7 @@
                         </div>
                     </div>
 
-                    <div class="card interactive-element" style="overflow: hidden;">
+                    <div class="card tech-card tech-hover tech-scan interactive-element" style="overflow: hidden;">
                         <div style="position: relative;" class="image-hover-effect">
                             <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                                  alt="器件" 
@@ -276,7 +303,7 @@
                 <!-- 自滑动展示 -->
                 <div style="overflow: hidden; margin-bottom: 30px;">
                     <div style="display: flex; gap: 30px; animation: autoSlide 30s linear infinite;">
-                        <div class="card interactive-element" style="flex-shrink: 0; width: 320px; overflow: hidden;">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="flex-shrink: 0; width: 320px; overflow: hidden;">
                             <div class="image-hover-effect">
                                 <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                                      alt="电磁仿真设计" 
@@ -306,7 +333,7 @@
                             </div>
                         </div>
 
-                        <div class="card interactive-element" style="flex-shrink: 0; width: 320px; overflow: hidden;">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="flex-shrink: 0; width: 320px; overflow: hidden;">
                             <div class="image-hover-effect">
                                 <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                                      alt="结构工程设计" 
@@ -336,7 +363,7 @@
                             </div>
                         </div>
 
-                        <div class="card interactive-element" style="flex-shrink: 0; width: 320px; overflow: hidden;">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="flex-shrink: 0; width: 320px; overflow: hidden;">
                             <div class="image-hover-effect">
                                 <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                                      alt="工艺流程设计" 
@@ -366,7 +393,7 @@
                             </div>
                         </div>
 
-                        <div class="card interactive-element" style="flex-shrink: 0; width: 320px; overflow: hidden;">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="flex-shrink: 0; width: 320px; overflow: hidden;">
                             <div class="image-hover-effect">
                                 <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                                      alt="测试验证设计" 
@@ -397,7 +424,7 @@
                         </div>
 
                         <!-- 重复项目以实现无缝循环 -->
-                        <div class="card interactive-element" style="flex-shrink: 0; width: 320px; overflow: hidden;">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="flex-shrink: 0; width: 320px; overflow: hidden;">
                             <div class="image-hover-effect">
                                 <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                                      alt="电磁仿真设计" 
@@ -446,7 +473,7 @@
                 <!-- 自滑动展示解决方案 -->
                 <div style="overflow: hidden; margin-bottom: 60px;">
                     <div style="display: flex; gap: 30px; animation: autoSlide 35s linear infinite;">
-                        <div class="card interactive-element" style="flex-shrink: 0; width: 380px; overflow: hidden;">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="flex-shrink: 0; width: 380px; overflow: hidden;">
                             <div class="image-hover-effect">
                                 <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                                      alt="新能源汽车解决方案" 
@@ -467,7 +494,7 @@
                             </div>
                         </div>
 
-                        <div class="card interactive-element" style="flex-shrink: 0; width: 380px; overflow: hidden;">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="flex-shrink: 0; width: 380px; overflow: hidden;">
                             <div class="image-hover-effect">
                                 <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                                      alt="电力电子解决方案" 
@@ -488,7 +515,7 @@
                             </div>
                         </div>
 
-                        <div class="card interactive-element" style="flex-shrink: 0; width: 380px; overflow: hidden;">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="flex-shrink: 0; width: 380px; overflow: hidden;">
                             <div class="image-hover-effect">
                                 <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                                      alt="消费电子解决方案" 
@@ -509,7 +536,7 @@
                             </div>
                         </div>
 
-                        <div class="card interactive-element" style="flex-shrink: 0; width: 380px; overflow: hidden;">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="flex-shrink: 0; width: 380px; overflow: hidden;">
                             <div class="image-hover-effect">
                                 <img src="https://images.unsplash.com/photo-1565514020179-026b92b84bb6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                                      alt="工业自动化解决方案" 
@@ -531,7 +558,7 @@
                         </div>
 
                         <!-- 重复项目以实现无缝循环 -->
-                        <div class="card interactive-element" style="flex-shrink: 0; width: 380px; overflow: hidden;">
+                        <div class="card tech-card tech-hover tech-scan interactive-element" style="flex-shrink: 0; width: 380px; overflow: hidden;">
                             <div class="image-hover-effect">
                                 <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                                      alt="新能源汽车解决方案" 
@@ -557,7 +584,7 @@
                 <!-- 行业痛点解决方案 -->
                 <div style="display: flex; flex-direction: column; gap: 50px; margin-bottom: 60px;">
                     <!-- 痛点1 -->
-                    <div class="card interactive-element" style="padding: 40px;">
+                    <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 40px;">
                         <div style="display: flex; align-items: center; margin-bottom: 25px;">
                             <div style="width: 64px; height: 64px; background: #3b82f6; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
                                 <i class="fas fa-clock" style="font-size: 24px; color: white;"></i>
@@ -616,7 +643,7 @@
                     </div>
 
                     <!-- 痛点2 -->
-                    <div class="card interactive-element" style="padding: 40px;">
+                    <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 40px;">
                         <div style="display: flex; align-items: center; margin-bottom: 25px;">
                             <div style="width: 64px; height: 64px; background: #10b981; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
                                 <i class="fas fa-dollar-sign" style="font-size: 24px; color: white;"></i>
@@ -675,7 +702,7 @@
                     </div>
 
                     <!-- 痛点3 -->
-                    <div class="card interactive-element" style="padding: 40px;">
+                    <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 40px;">
                         <div style="display: flex; align-items: center; margin-bottom: 25px;">
                             <div style="width: 64px; height: 64px; background: #8b5cf6; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
                                 <i class="fas fa-microchip" style="font-size: 24px; color: white;"></i>
@@ -734,7 +761,7 @@
                     </div>
 
                     <!-- 痛点4 -->
-                    <div class="card interactive-element" style="padding: 40px;">
+                    <div class="card tech-card tech-hover tech-scan interactive-element" style="padding: 40px;">
                         <div style="display: flex; align-items: center; margin-bottom: 25px;">
                             <div style="width: 64px; height: 64px; background: #ef4444; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-right: 20px;">
                                 <i class="fas fa-shield-alt" style="font-size: 24px; color: white;"></i>
@@ -794,7 +821,7 @@
                 </div>
 
                 <!-- 四大核心能力 -->
-                <div class="card" style="background: var(--primary-50); border-radius: 20px; padding: 40px; margin-bottom: 60px;">
+                <div class="card tech-card tech-border" style="background: var(--primary-50); border-radius: 20px; padding: 40px; margin-bottom: 60px;">
                     <h3 style="font-size: 28px; font-weight: bold; color: var(--primary-800); text-align: center; margin-bottom: 30px;">四大核心能力重构产业标准</h3>
                     <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 25px; margin-bottom: 30px;">
                         <div style="text-align: center;">
